@@ -1,0 +1,64 @@
+.drop {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.drop__dropElementsList {
+  min-height: 5rem;
+  width: 100%;
+  padding: 5px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+
+  list-style: none;
+  border: 2px #ccc solid;
+}
+
+.drop__dropZone {
+  width: 6rem;
+  height: 5rem;
+
+  border: dashed 3px #ccc;
+}
+
+.drop__dropZone--dropOver {
+  border: dashed 4px #ccc;
+}
+
+.geometricShapes {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shape {
+  --width: 2.5rem;
+
+  width: var(--width);
+  height: var(--width);
+  text-align: center;
+}
+
+.shape--drag {
+  --width: 2rem;
+}
+
+.shape--square {
+  background: violet;
+}
+
+.shape--circle {
+  border-radius: 100%;
+  background: teal;
+}
